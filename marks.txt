@@ -1,0 +1,30 @@
+Start
+Input marks
+If marks >= 91
+  marks=<100
+Then
+Grade = A
+endif
+If marks >= 81
+marks=<90
+Then
+Grade = B
+endif
+If marks >=71
+marks =<80
+Then
+Grade = C
+endif
+If marks >= 61
+marks=<70
+Then
+Grade = D
+endif
+If marks >= 51 
+marks=<60
+Then 
+Grade = E
+Endif
+If marks < 51
+Then
+failed
