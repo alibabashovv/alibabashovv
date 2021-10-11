@@ -1,40 +1,41 @@
-﻿using System;
+﻿using search_word;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace ConsoleApp8
+namespace Generic
+
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            try
-            {
-                Console.WriteLine("massivin sayi");
-                int x = int.Parse(Console.ReadLine());
-                Console.WriteLine("ededi daxil et");
-                int z = int.Parse(Console.ReadLine());
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			SortedList sortedList = new SortedList();
+			sortedList.Add(1990, "Phyton");
+			sortedList.Add(2001, "C#");
+			sortedList.Add(1978, "SQL");
+			sortedList.Add(1972, "C");
+			sortedList.Add(1995, "JavaScript");
 
-                Console.WriteLine("massivin ededlerini daxil et");
-                int[] array1 = new int[x];
-                for (int i = 0; i < array1.Length; i++)
-                {
-                    Console.WriteLine($"eded[{i}]:");
-                    array1[i] = int.Parse(Console.ReadLine());
+			foreach (DictionaryEntry num in sortedList)
+			{
+				Console.WriteLine(num.Key);
 
-                    if (array1[i] == z)
-                    {
-                        Console.WriteLine("beraber eded var");
-                    }
-                    else
-                    {
-                        Console.WriteLine("beraber eded yoxdu");
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("teyin olunmayib");
-            }
-        }
-    }
+			}
+			foreach (DictionaryEntry item in sortedList)
+			{
+				Console.WriteLine(item.Value);
+			}
+		}
+	}
 }
-    
+
+
+
+
+
+
+
+
+
+
