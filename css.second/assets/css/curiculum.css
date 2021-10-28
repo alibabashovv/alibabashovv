@@ -1,0 +1,27 @@
+*{
+    background-color: darkgoldenrod;
+}
+.image{
+    width: 100px;
+    height: 180px;
+    background-image: url(https://www.partyfiesta.com/de/8209-large_default/minions-supershape-ballon.jpg);
+}
+.box{
+    background-color: darkgoldenrod;
+   
+    display: inline-block;
+}
+.person{
+    background-color: darkgreen;
+    width: 100px;
+    height: 200px;
+}
+
+h3.titles{
+    color: rgb(64, 64, 219);
+}
+h3.person{
+    color: darkblue;
+
+}
+
